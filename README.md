@@ -120,6 +120,37 @@ This project uses Tailwind CSS for styling. You can customize the appearance by 
 - `tailwind.config.ts` - For theme colors and other Tailwind settings
 - `app/globals.css` - For global styles and CSS variables
 
+## Features
+
+- 📱 **Responsive Design**: Fully responsive layout that works on all devices
+- 🌓 **Dark Mode**: Toggle between light and dark themes
+- 📊 **Dashboard Analytics**: Overview of key metrics and stats
+- 👥 **User Management**: Register and manage user accounts
+- 📝 **Content Moderation**: Review and moderate reported content
+- 🔄 **Approval Workflows**: Process for suppliers and events
+- 🔒 **Form Validation**: Using Zod and React Hook Form
+- 💾 **State Management**: Persistent state with Zustand
+- 🎨 **Modern UI**: Built with shadcn/ui components and Tailwind CSS
+
+## Troubleshooting
+
+### Dark Mode Issues
+
+If dark mode isn't working:
+
+1. Check that `next-themes` is properly installed
+2. Verify the `ThemeProvider` is correctly set up in `app/layout.tsx`
+3. Ensure CSS variables for dark mode are defined in `globals.css`
+4. Check for console errors related to hydration
+
+### Form Validation
+
+If form validation isn't working:
+
+1. Verify Zod schemas in `lib/schema.ts`
+2. Check that React Hook Form is properly configured with Zod resolver
+3. Ensure form fields have the correct names matching the schema
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
